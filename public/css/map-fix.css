@@ -1,0 +1,12 @@
+/* + - */
+.gm-bundled-control {
+    display: none !important;
+} */
+/* map */
+.gm-inset-map {
+    display: none !important;
+}
+/* increase */
+.gm-style:nth-child(5) {
+    display: none !important;
+}

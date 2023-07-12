@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+a:visited,
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img,
+svg,
+video {
+    vertical-align: top;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+label,
+textarea,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+input,
+label,
+textarea {
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    display: none;
+}

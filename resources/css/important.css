@@ -1,0 +1,43 @@
+.hidden {
+    display: none;
+}
+
+.shown-block {
+    display: block;
+}
+
+.shown-flex {
+    display: flex;
+}
+
+.scroll-block {
+    overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+    .desktop--opacity-0 {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 680px) {
+
+    .form-footer {
+        flex-wrap: wrap;
+    }
+
+    .form__captcha {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .g-recaptcha {
+        transform: scale(0.7);
+        position: relative;
+        left: -35px;
+    }
+}
+

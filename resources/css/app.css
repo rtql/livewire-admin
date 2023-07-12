@@ -1,0 +1,33 @@
+@import "reset.css";
+@import "common.css";
+@import "form.css";
+@import "../views/livewire/front/includes/header/header.css";
+@import "../views/livewire/front/main/main-slider/slider.css";
+@import "../views/livewire/front/main/hero/hero.css";
+@import "../views/livewire/front/main/transport/transport.css";
+@import "../views/livewire/front/main/offer/offer.css";
+@import "../views/livewire/front/main/news/news.css";
+
+@import "../views/livewire/front/pages/services/services.css";
+@import "../views/livewire/front/pages/about/about.css";
+@import "../views/livewire/front/pages/contacts/contacts.css";
+@import "../views/livewire/front/pages/faq/faq.css";
+@import "../views/livewire/front/pages/blog/blog.css";
+@import "../views/livewire/front/pages/info/info.css";
+@import "../views/livewire/front/pages/custom/custom.css";
+
+@import "../views/livewire/front/subpages/subservices/subservices.css";
+@import "../views/livewire/front/subpages/subblog/subblog.css";
+
+@import "../views/livewire/front/includes/footer/footer.css";
+
+@import "../views/livewire/front/partials/callback/callback.css";
+@import "../views/livewire/front/partials/media/media.css";
+@import "../views/livewire/front/partials/notify/notify.css";
+
+
+
+@import "../views/errors/404.css";
+@import "important.css";
+
+

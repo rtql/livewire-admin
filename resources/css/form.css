@@ -1,0 +1,90 @@
+.form {
+    --fz: 15px;
+    --offset: 17px;
+    --color: #495057;
+    --color-validate: var(--red);
+    --border-color: #707070;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + var(--offset) * 2);
+    margin: 0 calc(0px - var(--offset));
+    font-size: var(--fz);
+    color: var(--color);
+}
+
+.input {
+    width: 50%;
+    padding: 0 var(--offset);
+}
+
+@media (max-width: 575px) {
+    .input {
+        width: 100%;
+    }
+
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0.5rem 0 0;
+}
+
+.group__input,
+.group__textarea {
+    order: 2;
+    padding: 5px 0;
+}
+
+.group__label {
+    order: 1;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.group__bar {
+    order: 3;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.textarea {
+    width: 100%;
+    margin: var(--offset) var(--offset) 0;
+}
+
+.group__textarea {
+    resize: none;
+}
+
+.group__input:focus:not(:placeholder-shown)~label,
+.group__input:valid:not(:placeholder-shown)~label,
+.group__textarea:focus:not(:placeholder-shown)~label,
+.group__textarea:valid:not(:placeholder-shown)~label,
+.group__input:not(:placeholder-shown)~label,
+.group__textarea:not(:placeholder-shown)~label {
+    color: var(--color-validate);
+}
+
+.group__input:focus~label,
+.group__textarea:focus~label {
+    top: -0.5rem;
+    color: var(--color-validate);
+}
+
+.group__input:focus~.group__bar,
+.group__textarea:focus~.group__bar,
+.group__input:not(:placeholder-shown)~.group__bar,
+.group__textarea:not(:placeholder-shown)~.group__bar {
+    border-bottom: 1px solid var(--color-validate);
+}
+
+.form span {
+    color: var(--red);
+}
+
+.form__captcha {
+    text-align: center;
+}
